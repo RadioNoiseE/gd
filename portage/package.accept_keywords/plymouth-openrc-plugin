@@ -1,0 +1,2 @@
+# required by plymouth-openrc-plugin (argument)
+=sys-boot/plymouth-openrc-plugin-0.1.3 ~amd64

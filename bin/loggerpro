@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+cd ~/.wine/dosdevices/c:/Program\ Files\ \(x86\)/Vernier\ Software/Logger\ Pro\ 3/
+wine LoggerPro.exe

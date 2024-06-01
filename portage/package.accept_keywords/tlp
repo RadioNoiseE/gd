@@ -1,0 +1,2 @@
+# required by tlp (argument)
+=sys-power/tlp-1.6.1 ~amd64

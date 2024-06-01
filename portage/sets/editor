@@ -1,0 +1,8 @@
+# Editor and Tools to Enhance Them
+
+app-editors/emacs
+app-editors/vim
+
+app-emacs/pdf-tools
+
+app-text/aspell

@@ -1,0 +1,12 @@
+# Enviroment Including Shell and Admin Tools
+
+app-shells/bash
+app-shells/bash-completion
+
+app-shells/fish
+
+app-admin/doas
+
+app-misc/jq
+
+sys-fs/fuse:0

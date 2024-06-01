@@ -1,0 +1,6 @@
+# Utils for Supporting Block Devices and SambaFS
+
+sys-fs/btrfs-progs
+sys-block/io-scheduler-udev-rules
+
+net-fs/samba

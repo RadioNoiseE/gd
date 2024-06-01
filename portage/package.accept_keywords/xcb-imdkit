@@ -1,0 +1,2 @@
+# required by app-i18n/fcitx-5.1.5::gentoo[X]
+=x11-libs/xcb-imdkit-1.0.5 ~amd64

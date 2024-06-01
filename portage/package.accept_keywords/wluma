@@ -1,0 +1,2 @@
+# required by sys-power/wluma (argument)
+=sys-power/wluma-4.4.0-r1 ~amd64

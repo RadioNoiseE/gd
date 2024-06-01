@@ -1,0 +1,9 @@
+# Low Level Sound Control and High Level Interface
+
+media-libs/alsa-lib
+media-sound/alsa-utils
+
+media-sound/pulseaudio
+media-video/pipewire
+
+media-sound/playerctl

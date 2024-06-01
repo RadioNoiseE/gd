@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+rm -r ~/Sketch/n_s01
+mv ~/Sketch/n_s00 ~/Sketch/n_s01
+cp -r ~/.wine/drive_c/users/steamuser/AppData/LocalLow/Nolla_Games_Noita/save00/ ~/Sketch/n_s00

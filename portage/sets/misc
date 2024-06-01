@@ -1,0 +1,18 @@
+# Misc Tools for Misc Use
+
+sys-process/htop
+app-misc/fastfetch
+
+sys-apps/rename
+sys-apps/fd
+sys-apps/ripgrep
+
+app-i18n/opencc
+dev-util/ctags
+
+media-libs/libsixel
+
+dev-libs/libvformat
+
+sys-power/acpilight
+net-misc/chrony
