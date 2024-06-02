@@ -111,10 +111,9 @@ mode "resize" {
 }
 bindsym $mod+r mode "resize"
 
-bindsym XF86MonBrightnessDown exec xbacklight -dec 2
-bindsym XF86MonBrightnessUp exec xbacklight -inc 3
+bindsym XF86MonBrightnessDown exec xbacklight -dec 1
+bindsym XF86MonBrightnessUp exec xbacklight -inc 1
 
-bindsym --locked XF86AudioMute exec pactl set-sink-mute @DEFAULT_SINK@ toggle
 bindsym XF86AudioLowerVolume exec wpctl set-volume @DEFAULT_AUDIO_SINK@ 2%-
 bindsym XF86AudioRaiseVolume exec wpctl set-volume @DEFAULT_AUDIO_SINK@ 2%+
 
@@ -161,7 +160,7 @@ for_window [title="Library"] floating enable, border pixel 1, sticky enable
 for_window [con_mark="Picture-in-Picture"] floating enable, opacity set 1
 
 for_window [app_id="org.qgis.qgis"] floating enable
-for_window [app_id="osu!"] fullscreen disable, floating enable, resize set height 1400, resize set width 2148
+for_window [app_id="osu!"] fullscreen disable 
 
 for_window [app_id="mpv"] floating enable, opacity set 1
 for_window [class="steam_proton"] floating enable, opacity set 1
