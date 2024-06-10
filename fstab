@@ -1,0 +1,6 @@
+# /etc/fstab: static file system information.
+ 
+/dev/nvme0n1p1		/boot		ext4		defaults	1	2
+/dev/nvme0n1p2		/boot/efi	vfat		defaults,sync	0	2
+/dev/nvme0n1p3		none		swap		sw		0	0
+/dev/nvme0n1p4		/		btrfs		compress=zstd:2	0	1
