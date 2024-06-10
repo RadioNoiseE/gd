@@ -22,6 +22,8 @@ file:: bashrc -> ~/.bashrc
 file:: spacemacs -> ~/.spacemacs
 file:: tlp -> /etc/tlp.conf
 file:: linux-6.6.30-gentoo-rne.h -> /usr/src/linux-6.6.30-gentoo/.config
+file:: fstab -> /etc/fstab
+file:: doas -> /etc/doas.conf
 
 extr:: anyconnect -> /usr/local/bin
 extr:: exposway & exposway-daemon -> /usr/local/bin
