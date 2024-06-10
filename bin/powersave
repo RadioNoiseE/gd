@@ -1,0 +1,5 @@
+# Powersave Mode
+
+pkill wluma
+pkill wlsunset
+pkill -f /usr/local/bin/exposway-daemon
