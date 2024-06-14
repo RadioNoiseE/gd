@@ -18,7 +18,7 @@ resize_applic() { # rules about the window of which app should be at which size;
   local ident="$1" con_id="$2"
 
   declare -A app_sizes=(
-    [foot]="1690x1060"
+    [foot]="1490x1060"
     [Emacs]="1690x1060"
   )
 
