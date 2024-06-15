@@ -1,10 +1,12 @@
 # /etc/skel/.bashrc
 
+export WLR_DRM_NO_MODIFIERS=1 # for wluma
 export WLR_RENDERER=vulkan # swaybg WL_DISPLAY_ROUNDTRIP failed for vulkan
 export GTK_IM_MODULE=fcitx # emacs GDK_IS_WAYLAND_DISPLAY assertion fail for wayland
 export QT_IM_MODULE=fcitx
 export XMODIFIERS=@im=fcitx
 export MOZ_ENABLE_WAYLAND=1 # firefox force wayland
+export XDG_CURRENT_DESKTOP=sway
 export EXPOSWAYMON="$HOME/.local/state/exposway/output"
 export EXPOSWAYDIR="$HOME/.local/state/exposway/"
 
