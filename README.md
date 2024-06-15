@@ -13,6 +13,7 @@ dir:: wluma -> ~/.config/wluma
 dir:: bin -> /usr/local/bin
 dir:: fonts -> /etc/fonts
 dir:: dracut -> /etc/dracut.conf.d
+dir:: elogind -> /etc/elogind
 dir:: portage -> /etc/portage
 
 file:: anyconnect -> ~/.anyconnect
