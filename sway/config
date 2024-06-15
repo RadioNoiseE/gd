@@ -1,3 +1,4 @@
+# exec --no-startup-id dbus-update-activation-environment --all
 set $mod Mod4
 set $left h
 set $down j
@@ -116,6 +117,7 @@ bindsym XF86MonBrightnessUp exec xbacklight -inc 1
 
 bindsym XF86AudioLowerVolume exec wpctl set-volume @DEFAULT_AUDIO_SINK@ 2%-
 bindsym XF86AudioRaiseVolume exec wpctl set-volume @DEFAULT_AUDIO_SINK@ 2%+
+bindsym F4 exec wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle
 
 bindsym Print exec grim ~/Images/ps_$(date +"%Y%m%d%H%M%S").png
 bindsym $mod+Print exec grim -g "$(slurp -d)" ~/Images/psa_$(date +"%Y%m%d%H%M%S").png
@@ -160,7 +162,7 @@ for_window [title="Library"] floating enable, border pixel 1, sticky enable
 for_window [con_mark="Picture-in-Picture"] floating enable, opacity set 1
 
 for_window [app_id="org.qgis.qgis"] floating enable
-for_window [app_id="osu!"] fullscreen disable 
+for_window [app_id="osu!"] fullscreen disable, opacity set 1
 
 for_window [app_id="mpv"] floating enable, opacity set 1
 for_window [class="steam_proton"] floating enable, opacity set 1
@@ -179,12 +181,12 @@ for_window [class="Gimp"] opacity set 1, floating enable
 
 xwayland enabled
 
-exec gentoo-pipewire-launcher
 exec mako
 exec fcitx5 -d
 exec wluma
 exec wlsunset -l 31.2 -L 121.5
 exec exposway-daemon
+exec gentoo-pipewire-launcher
 exec ~/.config/sway/track_prev_focus
 exec ~/.config/sway/floating_size
 

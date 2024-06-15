@@ -5,11 +5,12 @@ media-libs/vulkan-loader
 dev-libs/wayland
 x11-base/xwayland
 
+gui-libs/xdg-desktop-portal-wlr
+
 gui-wm/sway
 gui-apps/waybar
 gui-apps/swaybg
 gui-apps/swayidle
-gui-apps/swaylock
 gui-apps/mako
 x11-libs/libnotify
 gui-apps/grim
