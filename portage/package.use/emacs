@@ -1,1 +1,1 @@
-app-editors/emacs harfbuzz tree-sitter imagemagick
+app-editors/emacs harfbuzz tree-sitter imagemagick dynamic-loading jit

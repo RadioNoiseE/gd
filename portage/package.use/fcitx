@@ -1,3 +1,3 @@
-app-i18n/fcitx enchant keyboard
+app-i18n/fcitx enchant keyboard presage
 # required by app-18n/fcitx
 media-libs/libsdl2 gles2

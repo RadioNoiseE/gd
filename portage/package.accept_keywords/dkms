@@ -1,0 +1,2 @@
+# required by dkms (argument)
+=sys-kernel/dkms-3.0.13 ~amd64

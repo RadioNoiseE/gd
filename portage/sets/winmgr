@@ -19,3 +19,5 @@ gui-apps/wf-recorder
 gui-apps/foot
 gui-apps/wl-clipboard
 dev-libs/bemenu
+
+gui-apps/wlsunset

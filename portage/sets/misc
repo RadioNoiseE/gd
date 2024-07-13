@@ -14,5 +14,6 @@ media-libs/libsixel
 
 dev-libs/libvformat
 
-sys-power/acpilight
 net-misc/chrony
+
+app-arch/unrar

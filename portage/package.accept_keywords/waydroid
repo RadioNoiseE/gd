@@ -1,0 +1,14 @@
+# required by app-containers/waydroid-1.4.2-r1::guru[python_single_target_python3_12]
+# required by app-containers/waydroid (argument)
+=dev-python/gbinder-1.1.2-r1 ~amd64
+# required by app-containers/waydroid-1.4.2-r1::guru[python_single_target_python3_12,clipboard]
+# required by app-containers/waydroid (argument)
+=dev-python/pyclip-0.7.0-r1 ~amd64
+# required by app-containers/waydroid-1.4.2-r1::guru
+# required by app-containers/waydroid (argument)
+=dev-libs/libglibutil-1.0.76 ~amd64
+# required by app-containers/waydroid (argument)
+=app-containers/waydroid-1.4.2-r1 ~amd64
+# required by app-containers/waydroid-1.4.2-r1::guru
+# required by app-containers/waydroid (argument)
+=dev-libs/gbinder-1.1.38 ~amd64

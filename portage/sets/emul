@@ -3,3 +3,5 @@
 app-emulation/qemu
 
 app-emulation/wine-proton
+
+app-containers/waydroid

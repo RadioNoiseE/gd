@@ -2,15 +2,15 @@
 
 media-video/mpv
 media-gfx/imv
-media-gfx/gimp
 
 app-text/ghostscript-gpl
 
 mail-client/thunderbird
+
 www-client/firefox
 
-net-analyzer/wireshark
+net-im/telegram-desktop
 
-sci-geosciences/qgis
+net-irc/catgirl
 
 sci-mathematics/fricas

@@ -7,6 +7,8 @@ app-shells/fish
 
 app-admin/doas
 
+app-portage/gentoolkit
+
 app-misc/jq
 
 sys-fs/fuse:0

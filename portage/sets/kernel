@@ -3,11 +3,12 @@
 sys-kernel/linux-firmware
 sys-firmware/sof-firmware
 
-sys-kernel/dracut
+sys-firmware/intel-microcode
 
-sys-kernel/gentoo-sources
-sys-kernel/installkernel
+sys-kernel/gentoo-kernel
 
-sys-boot/grub
+sys-boot/efibootmgr
+sys-boot/refind
+
 sys-boot/plymouth
 sys-boot/plymouth-openrc-plugin

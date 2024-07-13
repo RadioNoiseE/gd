@@ -1,0 +1,2 @@
+# required by net-im/telegram-desktop-4.15.0-r2::gentoo
+>=media-video/ffmpeg-6.1.1-r5 opus vpx
