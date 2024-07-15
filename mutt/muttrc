@@ -1,0 +1,91 @@
+# scroll
+#
+set menu_scroll=yes
+
+# syntax hl
+#
+color normal      white          black
+color hdrdefault  green          default
+color quoted      green          default
+color quoted1     yellow         default
+color quoted2     red            default
+color signature   cyan           default
+color indicator   brightyellow   red
+color error       brightred      default
+color status      brightwhite    blue
+color tree        brightmagenta  black
+color tilde       blue           default
+color attachment  brightyellow   default
+color markers     brightred      default
+color message     white          black
+color search      brightwhite    magenta
+color bold        brightyellow   default
+
+# pager index
+#
+set pager_index_lines = 4
+
+# sidebar
+#
+set sidebar_visible = yes
+set sidebar_width = 20
+set sidebar_folder_indent = yes
+set sidebar_short_path = yes
+
+# spam scroe
+#
+spam "X-Spam-Score: ([0-9\\.]+).*" "SA: %1"
+set pager_format = " %C - %[%H:%M] %.20v, %s%* %?H? [%H] ?"
+
+# header
+#
+ignore          *
+unignore        From To Cc Bcc Date Subject
+unhdr_order     *
+hdr_order       From: To: Cc: Bcc: Date: Subject:
+
+# threading preferences
+#
+set sort = threads
+set strict_threads = yes
+
+# header cache
+#
+set header_cache = "/var/tmp/mutt"
+set message_cachedir = "/var/tmp/mutt"
+
+# imap conn
+#
+unset imap_passive
+set mail_check = 60
+set imap_keepalive = 300
+
+# mailboxes
+#
+set imap_check_subscribed
+
+# subscribe
+#
+subscribe "gentoo-.*@gentoo\\.org"
+
+# icloud imap
+#
+set realname = "{NAME}"
+set imap_user = "{USER}"
+set imap_pass = "{PASS}"
+set from = "{ADDR}"
+set folder = "imaps://{USER}@imap.mail.me.com/"
+set spoolfile = "+Inbox"
+set postponed = "+Drafts"
+
+# icloud smtp
+#
+set smtp_url = "smtp://{USER}@smtp.mail.me.com:587/"
+set smtp_pass = $imap_pass
+set ssl_force_tls = yes
+set record = "+Sent Messages"
+
+# mailcap
+#
+set mailcap_path = "~/.config/mutt/mailcap"
+auto_view text/html

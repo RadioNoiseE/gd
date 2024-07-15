@@ -1,0 +1,5 @@
+text/html; w3m -I %{charset} -T text/html; copiousoutput;
+application/pdf; gv %s &> /dev/null;
+image/*; imv %s &> /dev/null;
+audio/*; mpv %s &> /dev/null;
+video/*; mpv %s &> /dev/null;

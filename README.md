@@ -10,6 +10,7 @@ dir:: mako -> ~/.config/mako
 dir:: mpv -> ~/.config/mpv
 dir:: pipewire -> ~/.config/pipewire
 dir:: wluma -> ~/.config/wluma
+dir:: mutt -> ~/.config/mutt
 dir:: bin -> /usr/local/bin
 dir:: fonts -> /etc/fonts
 dir:: dracut -> /etc/dracut.conf.d
