@@ -1,6 +1,7 @@
 # Editor and Tools to Enhance Them
 
 app-editors/emacs
+app-editors/teco
 app-editors/vim
 
 app-emacs/pdf-tools

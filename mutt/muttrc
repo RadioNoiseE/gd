@@ -31,6 +31,12 @@ set sidebar_visible = yes
 set sidebar_width = 20
 set sidebar_folder_indent = yes
 set sidebar_short_path = yes
+set sidebar_sort_method = alpha
+bind index,pager <Esc>k sidebar-prev
+bind index,pager <Esc>j sidebar-next
+bind index,pager <Esc>o sidebar-open
+bind index,pager <Esc>u sidebar-page-up
+bind index,pager <Esc>d sidebar-page-down
 
 # spam scroe
 #
@@ -40,16 +46,16 @@ set pager_format = " %C - %[%H:%M] %.20v, %s%* %?H? [%H] ?"
 # header
 #
 ignore          *
-unignore        From To Cc Bcc Date Subject
+unignore        From To Cc Bcc Date Subject X-face
 unhdr_order     *
-hdr_order       From: To: Cc: Bcc: Date: Subject:
+hdr_order       From: To: Cc: Bcc: Date: Subject: X-Face:
 
 # threading preferences
 #
 set sort = threads
 set strict_threads = yes
 
-# header cache
+# cache
 #
 set header_cache = "/var/tmp/mutt"
 set message_cachedir = "/var/tmp/mutt"
@@ -59,10 +65,6 @@ set message_cachedir = "/var/tmp/mutt"
 unset imap_passive
 set mail_check = 60
 set imap_keepalive = 300
-
-# mailboxes
-#
-set imap_check_subscribed
 
 # subscribe
 #
@@ -74,7 +76,7 @@ set realname = "{NAME}"
 set imap_user = "{USER}"
 set imap_pass = "{PASS}"
 set from = "{ADDR}"
-set folder = "imaps://{USER}@imap.mail.me.com/"
+set folder = "imaps://{USER}@imap.mail.me.com:993/"
 set spoolfile = "+Inbox"
 set postponed = "+Drafts"
 
@@ -85,7 +87,18 @@ set smtp_pass = $imap_pass
 set ssl_force_tls = yes
 set record = "+Sent Messages"
 
+# mailboxes
+#
+set imap_check_subscribed = no
+mailboxes -notify $spoolfile
+mailboxes $postponed $record
+mailboxes "+Junk" "+Templates"
+
 # mailcap
 #
 set mailcap_path = "~/.config/mutt/mailcap"
 auto_view text/html
+
+# xface
+#
+my_hdr X-Face: *[>eDAPM?U?Cx\$/6HNmXzNCNhzKU\#:oG\#(lw!uh\$7nMD%\${/<.wk(r!3C(xNhV.EN!+uOUMq7]/H?Lk98rZl\":690@*gjH@zEz{R\$IuVJlhnlc.0?*BJhGy5N]Fv9D)vv-~-6yg,\\\$lYpE.qk=1FR!K1!3+Ec]L\`~eC,m6bFeXJb-=\$fWylGg3+ALBb\'jhg1z8j7G?dT]@LIt,~LzO,v\"nNOW3a%Y\\5F|id}n*k>2:d>bhAvcA)QM%?\\Xe1A\'>jp9FV*k*@Q(?NhDVT\`32j-YGEe?d\\Y+A@w/\$,EGL^!,w5Dr\$x|ncyr}|Tt^+D.@?uAaHk8T~HZl8U0q

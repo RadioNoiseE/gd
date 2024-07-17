@@ -1,0 +1,9 @@
+#!/bin/sh
+
+t=/tmp/muttach
+mkdir -p $t
+f=`basename $2`
+n=$t/$f
+
+cp $2 $n
+$1 $n &>/dev/null &

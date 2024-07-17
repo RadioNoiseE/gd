@@ -4,8 +4,9 @@ media-video/mpv
 media-gfx/imv
 
 app-text/ghostscript-gpl
+app-text/gv
 
-mail-client/thunderbird
+mail-client/mutt
 
 www-client/firefox
 

@@ -19,7 +19,8 @@ resize_applic() { # rules about the window of which app should be at which size;
 
   declare -A app_sizes=(
     [foot]="1490x1060"
-    [Emacs]="1690x1060"
+    [org.telegram]="1960x1080"
+    [Emacs]="1456x1050"
   )
 
   local target_size=${app_sizes[$ident]}
@@ -44,15 +45,19 @@ swaymsg -mt subscribe '["window"]' | jq --unbuffered -c 'select(.change == "new"
 
   roles=("pop-up" "bubble" "dialog" "task_dialog" "About")
   types=("menu" "notification" "dialog")
-  titles=("Administrator privileges required" "About Mozilla Firefox")
+  titles=("Administrator privileges required" "About Mozilla Firefox" "Question")
   classes=("Pinentry" "pinentry")
+
+  echo $window_title
+  echo $app_id
+  echo $window_class
 
   if [[ " ${roles[*]} " =~ " ${window_role} " ]] ||
      [[ " ${types[*]} " =~ " ${window_type} " ]] ||
      [[ " ${titles[*]} " =~ " ${window_title} " ]] ||
      [[ " ${classes[*]} " =~ " ${window_class} " ]] ||
      [[ $app_id == "floating" || $app_id == "floating_update" ]]; then
-    continue
+     continue
   fi
 
   app_ident=$(ident_applic "$app_id" "$window_class")

@@ -1,4 +1,5 @@
 # Gentoo Optimized for Laptop
 
 sys-power/thermald
-sys-power/tlp
+
+sys-power/powertop
