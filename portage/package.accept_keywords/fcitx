@@ -1,1 +1,2 @@
 app-i18n/fcitx:5 ~amd64
+x11-libs/xcb-imdkit ~amd64

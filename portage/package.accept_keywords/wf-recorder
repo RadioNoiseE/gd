@@ -1,2 +1,1 @@
-# required by wf-recorder (argument)
-=gui-apps/wf-recorder-0.4.1 ~amd64
+gui-apps/wf-recorder ~amd64

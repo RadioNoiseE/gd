@@ -1,2 +1,1 @@
-# required by gui-apps/wlsunset (argument)
-=gui-apps/wlsunset-0.4.0 ~amd64
+gui-apps/wlsunset ~amd64

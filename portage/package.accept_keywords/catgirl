@@ -1,2 +1,1 @@
-# required by net-irc/catgirl (argument)
-=net-irc/catgirl-2.2a ~amd64
+net-irc/catgirl ~amd64

@@ -1,6 +1,2 @@
-# required by media-libs/mesa-23.3.1::gentoo[X]
-# required by x11-base/xwayland-23.2.4::gentoo
->=x11-libs/xcb-util-keysyms-0.4.1 abi_x86_32
-# required by media-libs/mesa-23.3.1::gentoo[llvm,-opencl]
-# required by x11-base/xwayland-23.2.4::gentoo
->=sys-devel/llvm-17.0.6 abi_x86_32
+x11-libs/xcb-util-keysyms abi_x86_32
+sys-devel/llvm abi_x86_32
