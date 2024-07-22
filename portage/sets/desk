@@ -1,0 +1,37 @@
+# protocol
+dev-libs/wayland
+x11-base/xwayland
+
+# renderer
+media-libs/vulkan-loader
+
+# window manager
+gui-wm/sway
+
+# alpha
+gui-apps/wlsunset
+
+# status bar
+gui-apps/waybar
+
+# background
+gui-apps/swaybg
+
+# idle
+gui-apps/swayidle
+
+# notifications
+gui-apps/mako
+x11-libs/libnotify
+
+# record
+gui-apps/slurp
+gui-apps/grim
+gui-apps/wf-recorder
+
+# clipboard
+gui-apps/wl-clipboard
+
+# launcher
+dev-libs/bemenu
+

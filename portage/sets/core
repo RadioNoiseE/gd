@@ -1,0 +1,40 @@
+# kernel
+sys-kernel/gentoo-kernel
+
+# bootloader
+sys-boot/efibootmgr
+sys-boot/refind
+
+# bootsplash
+sys-boot/plymouth
+sys-boot/plymouth-openrc-plugin
+
+# firmware
+sys-kernel/linux-firmware
+sys-firmware/sof-firmware
+sys-firmware/intel-microcode
+
+# temperature monitor
+sys-power/thermald
+
+# audio
+media-libs/alsa-lib
+media-libs/alsa-ucm-conf
+media-plugins/alsa-plugins
+
+# filesystem
+sys-fs/btrfs-progs
+sys-fs/fuse:0
+
+# block devices
+sys-block/io-scheduler-udev-rules
+
+# wireless lan
+net-wireless/iwd
+
+# hwclock
+net-misc/chrony
+
+# house keeping
+app-admin/doas
+

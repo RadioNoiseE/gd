@@ -1,0 +1,27 @@
+# video
+media-video/mpv
+
+# image
+media-gfx/imv
+
+# pdf
+app-text/gv
+
+# irc
+net-irc/catgirl
+
+# mail
+mail-client/mutt
+
+# terminal
+gui-apps/foot
+
+# telegram
+net-im/telegram-desktop
+
+# browser
+www-client/firefox
+
+# computer algebra system
+sci-mathematics/fricas
+

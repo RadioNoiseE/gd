@@ -1,11 +1,15 @@
 {
 	"layer": "top",
 		"position": "top",
-		"height": 29,
-		"spacing": 3,
+		"height": 35,
+		"spacing": 4,
 		"modules-left": ["custom/launcher", "sway/workspaces", "sway/window"],
 		"modules-center": ["mpris"],
-		"modules-right": ["pulseaudio", "network", "memory", "battery", "backlight", "clock"],
+		"modules-right": ["network", "jack", "memory", "battery", "backlight", "clock"],
+		"sway/window": {
+			"max-length": 60,
+			"tooltip": false
+		},
 		"clock": {
 			"calendar": {
 				"mode": "year",
@@ -25,11 +29,13 @@
 			"format-alt": "{:%Y-%m-%d}"
 		},
 		"memory": {
-			"format": "{}% 󰟵 "
+			"format": "{}% 󰟵",
+			"tooltip": false
 		},
 		"backlight": {
 			"format": "{percent}% {icon}",
-			"format-icons": [" ", " ", " ", " ", " ", " ", " ", " ", " "]
+			"format-icons": ["", "", "", "", "", "", "", "", ""],
+			"tooltip": false
 		},
 		"battery": {
 			"states": {
@@ -38,36 +44,32 @@
 				"critical": 15
 			},
 			"format": "{capacity}% {icon}",
-			"format-charging": "{capacity}% 󰠑 ",
-			"format-plugged": "{capacity}%  ",
+			"format-charging": "{capacity}% 󰠑",
+			"format-plugged": "{capacity}% ",
 			"format-alt": "{time} {icon}",
-			"format-icons": [" ", " ", " ", " ", " "]
+			"format-icons": ["", "", "", "", ""],
+			"tooltip": false
 		},
 		"network": {
-			"format-wifi": "{essid} ({signalStrength}%) 󰑫 ",
-			"format-ethernet": "{ipaddr}/{cidr} 󰀁 ",
-			"tooltip-format": "{ifname} via {gwaddr} 󰃨 ",
-			"format-linked": "{ifname} 󰀂 ",
-			"format-disconnected": "Disconnected 󰲜 ",
-			"format-alt": "{ifname}: {ipaddr}/{cidr}"
+			"format-wifi": "{essid}[{signalStrength}%] 󰀁",
+			"format-ethernet": "{ipaddr}/{cidr} 󰀁",
+			"format-linked": "{ifname} 󰀂",
+			"format-disconnected": "Disconnected 󰲜",
+			"format-alt": "{ifname}: {ipaddr}/{cidr}",
+			"tooltip": false
 		},
-		"pulseaudio": {
-			"format": "{volume}% {icon}",
-			"format-icons": {
-				"headphone": " ",
-				"hands-free": " ",
-				"headset": " ",
-				"default": [" ", " ", " "]
-			},
-			"on-click": ""
+		"jack": {
+			"format": "DSP[{load}] 󰃨",
+			"tooltip": false
 		},
 		"mpris": {
 			"player": "mpv",
 			"format": "{dynamic}",
 			"format-paused": "{dynamic}",
+			"tooltip": false
 		},
 		"custom/launcher": {
-			"format": "  󰣨 ",
+			"format": "  󰣨",
 			"tooltip": false
 		}
 }

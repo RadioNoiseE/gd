@@ -9,7 +9,8 @@ x11-libs/libXrandr abi_x86_32
 x11-libs/libXrender abi_x86_32
 x11-libs/libXxf86vm abi_x86_32
 media-libs/fontconfig abi_x86_32
-media-libs/libsdl2 haptic abi_x86_32
+media-libs/libsdl2 abi_x86_32 haptic
+gui-libs/libdecor abi_x86_32 -gtk
 dev-libs/gmp abi_x86_32
 net-libs/gnutls abi_x86_32
 sys-apps/dbus abi_x86_32
@@ -65,4 +66,10 @@ virtual/libiconv abi_x86_32
 virtual/opengl abi_x86_32
 virtual/libudev abi_x86_32
 sys-apps/systemd-utils abi_x86_32
+sys-libs/libunwind abi_x86_32
+media-libs/graphene abi_x86_32
+media-plugins/gst-plugins-meta abi_x86_32
+media-plugins/gst-plugins-jack abi_x86_32
+media-sound/jack2 abi_x86_32
+virtual/jack abi_x86_32
 sys-libs/glibc hash-sysv-compat

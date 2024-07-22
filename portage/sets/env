@@ -1,0 +1,76 @@
+# shell
+app-shells/bash
+app-shells/fish
+
+# package
+app-portage/gentoolkit
+
+# json
+app-misc/jq
+
+# input method
+app-i18n/fcitx:5
+app-i18n/fcitx-gtk:5
+app-i18n/fcitx-qt:5
+app-i18n/fcitx-rime:5
+app-i18n/mozc
+
+# status
+app-misc/fastfetch
+sys-process/htop
+sys-power/powertop
+
+# util
+sys-apps/rename
+sys-apps/fd
+sys-apps/ripgrep
+
+# convert
+app-i18n/opencc
+app-text/pandoc
+app-text/ghostscript-gpl
+
+# file transfer
+net-fs/samba
+
+# editor
+app-editors/emacs
+app-editors/vim
+
+# format
+media-libs/libsixel
+app-emacs/pdf-tools
+
+# archive
+app-arch/unrar
+app-arch/zip
+app-arch/p7zip
+
+# music
+media-sound/playerctl
+
+# bluetooth
+net-wireless/bluez
+
+# proxy
+net-vpn/openconnect
+
+# emulator
+app-emulation/qemu
+app-emulation/wine-proton
+app-containers/waydroid
+
+# net
+net-misc/curl
+net-misc/wget
+net-misc/aria2
+dev-vcs/git
+net-misc/yt-dlp
+
+# spell
+app-text/aspell
+
+# fonts
+media-fonts/noto-cjk
+media-fonts/iosevka
+

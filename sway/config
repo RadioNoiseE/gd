@@ -114,10 +114,9 @@ bindsym $mod+r mode "resize"
 bindsym XF86MonBrightnessDown exec light -1
 bindsym XF86MonBrightnessUp exec light +1
 
-bindsym XF86AudioLowerVolume exec wpctl set-volume @DEFAULT_AUDIO_SINK@ 2%-
-bindsym XF86AudioRaiseVolume exec wpctl set-volume @DEFAULT_AUDIO_SINK@ 2%+
-bindsym F4 exec wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle
-bindsym XF86AudioMute exec wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle
+bindsym XF86AudioLowerVolume exec amixer set "PGA1.0 1 Master" 2%-
+bindsym XF86AudioRaiseVolume exec amixer set "PGA1.0 1 Master" 2%+
+bindsym XF86AudioMute exec amixer set "PGA1.0 1 Master" toggle
 
 bindsym Print exec grim ~/Images/ps_$(date +"%Y%m%d%H%M%S").png
 bindsym $mod+Print exec grim -g "$(slurp -d)" ~/Images/psa_$(date +"%Y%m%d%H%M%S").png
@@ -166,7 +165,8 @@ for_window [app_id="org.telegram"] floating enable, inhibit_idle fullscreen
 for_window [app_id="osu!"] fullscreen disable, opacity set 1
 for_window [class="steam_proton"] floating enable, opacity set 1
 
-for_window [class="GV"] floating enable, opecity set 1
+for_window [class="GV"] floating enable, opacity set 1
+for_window [class="XDvi"] floating enable, opacity set 1
 for_window [app_id="imv"] floating enable, opacity set 1
 for_window [app_id="mpv"] floating enable, opacity set 1
 
@@ -186,9 +186,9 @@ xwayland enabled
 
 exec mako
 exec wlsunset -l 31.2 -L 121.5
+exec jackd -d alsa -d hw:sofessx8336 -P -z -
 exec fcitx5 -d
-exec gentoo-pipewire-launcher restart
 # exec exposway-daemon
-exec ~/.config/sway/floating_size
+# exec ~/.config/sway/floating_size
 
 include /etc/sway/config.d/*

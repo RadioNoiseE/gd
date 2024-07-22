@@ -1,6 +1,6 @@
 * {
-    font-family: "Sarasa Mono Slab TC", "3270 Nerd Font";
-    font-size: 15.6px;
+    font-family: "Sarasa Mono Slab TC", "MesloLGS NF";
+    font-size: 16px;
 }
 
 window#waybar {
@@ -65,7 +65,7 @@ button:hover {
 #memory,
 #backlight,
 #network,
-#pulseaudio,
+#jack,
 #window,
 #workspaces {
     margin: 0 8px;
@@ -139,12 +139,12 @@ label:focus {
     background-color: transparent;
 }
 
-#pulseaudio {
+#jack {
     background-color: transparent;
     color: #ffffff;
 }
 
-#pulseaudio.muted {
+#jack.disconnected {
     background-color: transparent;
     color: #ffffff;
 }
